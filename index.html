@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/mario-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Super Mario</title>
+</head>
+<body>
+    <div class="video-mario">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+    <div class="container">
+        <img src="./assets/logo.png" alt="logo-super-mario" class="logo-mario">
+        <p><strong>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</strong></p>
+        <p>
+            Já se viu no meio de uma emergência de encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe! Mario & Luigi, os encanadores mais famosos do Reino dos Cogumelos, estão prontos para salvar o dia com rapidez e bom humor!
+        </p>
+        <button onclick="cliqueiNoBotao()">Entre em Contato Agora</button>
+    </div>
+    <img src="./assets/mario.png" alt="logo-mario-e-luigi" class="mario-luigi">
+    <form action="https://formsubmit.co/bomag61297@rdluxe.com" method="POST" class="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <label for="nome">Nome</label>
+        <input class="input-nome" type="text" placeholder="Digite Seu nome" required>
+        <label for="telefone">Telefone</label>
+        <input type="tel" placeholder="Digite Seu telefone" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Descreva seu problema aqui..." required></textarea>
+        <button class="button-submit" type="submit" onclick="sumirFormulario()">Solicitar Orçamento</button>
+    </form>
+    <div class="mascara-form"></div>
+</body>
+<script src="scripts.js"></script>
+</html>
