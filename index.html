@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="video-mario">
-        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <video src="./assets/video.mp4" type="video/mp4" autoplay muted loop playsinline></video>
         <div class="mascara-video"></div>
     </div>
     <div class="container">
@@ -27,13 +27,13 @@
     <form action="https://formsubmit.co/bomag61297@rdluxe.com" method="POST" class="fale-conosco">
         <h2>Fale Conosco</h2>
         <label for="nome">Nome</label>
-        <input class="input-nome" type="text" placeholder="Digite Seu nome" required>
+        <input class="input-nome" type="text" name="nome" placeholder="Digite Seu nome" required>
         <label for="telefone">Telefone</label>
-        <input type="tel" placeholder="Digite Seu telefone" required>
+        <input type="tel" name="telefone" placeholder="Digite Seu telefone" required>
         <label for="mensagem">Mensagem</label>
         <textarea name="mensagem" id="mensagem" placeholder="Descreva seu problema aqui..." required></textarea>
         <button class="button-submit" type="submit" onclick="sumirFormulario()">Solicitar Orçamento</button>
-    </form>
+    </form>    
     <div class="mascara-form"></div>
 </body>
 <script src="scripts.js"></script>
